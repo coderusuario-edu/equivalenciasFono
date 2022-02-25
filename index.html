@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simulador de equivalencias y asimilación</title>
+        <meta author="Eduardo Nieva"/>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col text-center">
+                    <h1 class="">
+                        Simulador de equivalencias y asimilación
+                    </h1>
+                    <p>Eduardo G Nieva</br>Informática para fonoaudiología</p>
+                </div>
+            </div>
+        </div>
+        <div class="container my-3" id="muestraAsimilacion">
+            <div class="row my-5">
+                <div class="col">
+                    <h3 class="text-center">
+                        Plan 1990
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                        aria-expanded="false" aria-controls="collapse1">
+                        Materias de 1 año
+                    </button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
+                        Materias de 2 año
+                    </button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                        aria-expanded="false" aria-controls="collapse3">
+                        Materias de 3 año
+                    </button><button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                        aria-expanded="false" aria-controls="collapse4">
+                        Materias de 4 año
+                    </button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                        aria-expanded="false" aria-controls="collapse5">
+                        Materias de 5 año
+                    </button>
+                </div>
+                <p id="listaColapsables">
+                    <div class="collapse" id="collapse1">
+                        <div class="card card-body">
+                            <ul id="lista1" class="list-group list-group-flush">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse2">
+                        <div class="card card-body">
+                            <ul id="lista2" class="list-group list-group-flush">                          
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse3">
+                        <div class="card card-body">
+                            <ul id="lista3" class="list-group list-group-flush">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse4">
+                        <div class="card card-body">
+                            <ul id="lista4" class="list-group list-group-flush"> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse5">
+                        <div class="card card-body">
+                            <ul id="lista5" class="list-group list-group-flush">
+                            </ul>
+                        </div>
+                    </div>
+                </p>
+               
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <h3 class="text-center">
+                        Plan 2021
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-between">
+                    <div class='pb-1 px-1' id="nuevoAnho1"></div>
+                    <div class='pb-1 px-1' id="nuevoAnho2"></div>
+                    <div class='pb-1 px-1' id="nuevoAnho3"></div>
+                    <div class='pb-1 px-1' id="nuevoAnho4"></div>
+                    <div class='pb-1 px-1' id="nuevoAnho5"></div>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-primary" id="button">
+                        Calcular Equivalencias
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-footer p-5"><div class="row text-center">
+            <p class="text-white">Todos los derechos reservados</p>
+        <a href="mailto:edunieva@unc.edu.ar" class="text-white">Eduardo Nieva ☃</a></div>
+
+        </footer>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/planes.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
