@@ -1,3 +1,18 @@
+#isologoContainer img {
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    z-index: -100;
+}
+@media screen and (max-width: 920px) {
+    #isologoContainer img {
+        position: relative;
+    }
+}
+.text-small {
+    font-size: 10px;
+}
+
 .bg-fono-primero {
     background-color: #3e7a46;
     opacity: 0.3;
@@ -41,6 +56,15 @@ p.card-title {
 }
 @media print {
     #resetButton {
+        display: none;
+    }
+    #textoIntrod {
+        display: none;
+    }
+    img {
+        display: none;
+    }
+    footer {
         display: none;
     }
 }
