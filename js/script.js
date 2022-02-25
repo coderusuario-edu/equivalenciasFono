@@ -5,6 +5,7 @@ let arrayCorrelativas = [];
 let boton = document.querySelector("#button");
 let optativaUsada = true;
 let puntosComLengIII = 0;
+let puntosAudioIII = 0;
 let existe;
 
 // Funciones
@@ -66,7 +67,7 @@ const pintarLabel = (idCh) => {
 };
 
 const controlDobleCorrelativa = (idMateriaVieja, materiaNuevo) => {
-    // let equivalencia = puente[id - 1].id_nuevo;
+    // logopedia (6)  - diagnóstico y terapeútica de la fonación I
     let tag;
     if (idMateriaVieja === "6") {
         materiaNuevo.map((item) => {
@@ -83,6 +84,8 @@ const controlDobleCorrelativa = (idMateriaVieja, materiaNuevo) => {
         });
         sacarCorrelativaDeArray(106);
     }
+
+    //Prácticas 1 nivel (13)  - prácticas 2 nivel (22)
     if (idMateriaVieja === "13") {
         materiaNuevo.map((item) => {
             pintarUnaEquivalencia(item);
@@ -99,6 +102,33 @@ const controlDobleCorrelativa = (idMateriaVieja, materiaNuevo) => {
         });
         sacarCorrelativaDeArray(133);
     }
+
+    //Audiología(15) - Clínica neuro otológica(24)
+
+    if (idMateriaVieja === "15") {
+        puntosAudioIII += 15;
+        agregarTag("128");
+        armarArrayCorrelativas(128); //id de objeto a agregar
+        if (puntosAudioIII === 69) {
+            //entra3 veces, por eso es 114
+            removerTag("128");
+            pintarUnaEquivalencia("128");
+            sacarCorrelativaDeArray(128);
+        }
+    }
+    if (idMateriaVieja === "24") {
+        puntosAudioIII += 24;
+        agregarTag("128");
+        armarArrayCorrelativas(128); //id de objeto a agregar
+        if (puntosAudioIII === 69) {
+            //entra3 veces, por eso es 69
+            removerTag("128");
+            pintarUnaEquivalencia("128");
+            sacarCorrelativaDeArray(128);
+        }
+    }
+
+    //Psicolingüística (25) - Neurolingüística (26)
     if (idMateriaVieja === "25") {
         puntosComLengIII += 25;
         agregarTag("129");
@@ -241,7 +271,7 @@ const mostrarAsimilacion = () => {
                 </ul>       
             </div>
             <div class="col-12">
-                <h3>Asignaturas a asimilar(?) al Plan 2021</h3>
+                <h3>Asignaturas a asimilar al Plan 2021</h3>
                 <ul class="list-group list-group-flush"> 
                 ${foohtmlNuevaEq}
                 </ul>       
