@@ -36,6 +36,9 @@ p.card-title {
 .bg-footer {
     background-color: #3e0440;
 }
+.o-scroll {
+    overflow: scroll;
+}
 @media print {
     #resetButton {
         display: none;
